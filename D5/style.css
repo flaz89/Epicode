@@ -1,0 +1,141 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+      body {
+        display: flex;
+        margin: 0;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .main {
+        width: 100%;
+      }
+
+      .topbar {
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .content {
+        border-top: 1px solid rgb(217, 217, 217);
+        border-left: 1px solid rgb(217, 217, 217);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.4%;
+        padding: 2% 2%;
+      }
+
+      .icon {
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em;
+        cursor: pointer;
+      }
+
+      .icon ion-icon {
+        font-size: 2em;
+      }
+
+      .icon p {
+        margin: 0;
+      }
+
+      .icon:not(:first-of-type) {
+        height: 16vh;
+      }
+
+      .logo {
+        height: 50%;
+      }
+
+      .search-wrapper {
+        display: flex;
+        height: 50%;
+        width: 30%;
+      }
+
+      .search-wrapper input {
+        width: 100%;
+        padding: 0 1em;
+      }
+
+      .icons-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .top-icon {
+        font-size: 2em;
+        padding: 0 0.5em;
+      }
+
+      .mic-icon {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-btn {
+        padding: 0 0.7em;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+      }
+
+      #thumb {
+        width: 23%;
+        height: 35%;
+      }
+
+
+
+      #thumb img[alt="video"] {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      #thumb_footer {
+        display: flex;
+        margin-top: 3%;
+      }
+
+      #thumb_footer h3 {
+        margin: 0;
+        
+      }
+
+      #thumb img[alt="epicode-logo"] {
+        width: 12%;
+        height: 12%;
+      }
+
+      #thumb_text {
+        padding-left: 5%;
+        padding-right: 30px;
+      }
+
+      .button-switcher {
+        display: flex;
+        background-color: black;
+        height:  1.5em;
+        width: 2.8em;
+        border-radius: 20px;
+        margin-right: 0.5em;
+        align-items: center;
+      }
+
+      .switcher {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+
+    
