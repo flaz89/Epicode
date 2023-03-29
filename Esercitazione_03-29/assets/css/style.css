@@ -1,0 +1,104 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.container {
+    background: linear-gradient(125deg, rgba(255,0,224,1) 0%, rgba(255,185,4,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+
+/*----------------------- HEADER --*/
+header {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    padding: 20px;
+}
+.header_text {
+    background-color: white;
+    border-top: 2px solid orange;
+    padding: 20px;
+}
+
+
+.center {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/*----------------------- MAIN --*/
+main > p {
+    text-align: left;
+}
+
+figure {
+    margin: 16px 0px;
+}
+
+figure p {
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+video {
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px gray;
+    width: 100%;
+}
+
+
+/*----------------------- SECTION --*/
+.features {
+    padding-left: 20px;
+    border-left: 2px solid white;
+    text-align: left;
+    
+}
+
+.features h3, p {
+    margin: 0;
+}
+
+/*----------------------- ARTICLE --*/
+
+article {
+    text-align: left;
+}
+
+article h2 {
+    margin-top: 50px;
+}
+
+article hr {
+    border: 1px solid white;
+}
+
+article li {
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+article p {
+    margin:20px 0;
+}
+
+ol li {
+    line-height: 25px;
+}
+
+/*----------------------- FOOTER --*/
+footer {
+    padding: 50px 0;
+}
+
+footer div {
+    margin: 5px;
+}
