@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+* {
+    font-family: "Poppins", "Helvetica neue", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+body {
+    background-image: url(/assests/img/sfondo.png);
+}
+
+.a_blue:visited {
+    color: #00A0C6;
+}
+/*---------------------- HEADER ----------------------*/
+
+#header_box {
+    text-align: center;
+    background: linear-gradient(rgba(0,160,198,1), rgba(3,109,134,1));
+    font-size: 2.2em;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgb(53, 53, 53);
+    margin-bottom: 30px;
+}
+
+#header_box img {
+    width: 300px;
+    margin: 30px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+header li {
+    line-height: 1.5em;
+}
+
+header .material-symbols-outlined  {
+   font-size: 15px;
+   padding-right: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: red;
+}
+
+/*---------------------- MAIN ----------------------*/
+
+#main_box {
+    padding: 15px 15px;
+    font-size: 1.9em;
+    line-height: 1.8em;
+    box-shadow: 0px 4px 8px rgb(53, 53, 53);
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+h1 {
+    line-height: 1.5em;
+}
+
+main .material-symbols-outlined  {
+  padding-right: 5px;
+}
+
+.text_purple {
+    color: #a02571;
+    font-weight: 900;
+}
+
+code {
+    background-color: rgb(206, 206, 206);
+    border: 2px solid  rgb(152, 152, 152);
+    border-radius: 10px;
+}
+
+/*---------------------- SECTION ----------------------*/
+
+table {
+
+    border-collapse: collapse;
+    border-bottom: 2px solid #3f6bca;
+    margin-bottom: 50px;
+}
+
+thead {
+    background-color: #3f6bca;
+    height: 100px;
+} 
+
+th {
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/*---------------------- ARTICLE----------------------*/
+iframe {
+    border-radius: 20px;
+}
+
+/*---------------------- FORM ----------------------*/
+form {
+    background-color: #e3e3e3;
+    padding: 15px;
+    margin: 40px 0;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+input {
+    width: 250px;
+    height: 2.2em;
+    border-width: 0;
+    border-bottom: 2px dashed black;
+}
+
+button {
+    background-color: #3f6bca;
+    width: 100px;
+    height: 2.2em;
+    border-width: 0;
+    color: white;
+}
+
+/*---------------------- ARTICLES ----------------------*/
+article {
+    background-color: #e3e3e3;
+    padding: 15px;
+    border: 1px solid gray;
+    margin-bottom: 30px ;
+}
+
+article p {
+    margin: 0;
+}
+
+.data {
+    text-align: end;
+}
+
+.material-symbols-outlined, .data p {
+    font-size: medium;
+}
+
+/*---------------------- FOOTER ----------------------*/
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 1.9em;
+    line-height: 1.5em;
+    background: linear-gradient(rgba(0,160,198,1), rgba(3,109,134,1));
+    padding: 10px 20px 20px 20px;
+}
+
+footer a {
+    color: rgb(244, 0, 244);
+}
