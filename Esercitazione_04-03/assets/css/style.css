@@ -40,6 +40,14 @@ figure {
     display: inline-block;
 }
 
+figcaption {
+    font-weight: bold;
+}
+
+figcaption:hover {
+    text-decoration: underline;
+}
+
 a {
     color: white;
     text-decoration: none;
