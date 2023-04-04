@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: darkblue;
+}
+
+#container {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.esercizio {
+    border-radius: 30px;
+    padding: 0.5em 1em;
+    margin: 2em;
+    background-color: lightgrey;
+}
+
+h2 {
+    color: red;
+    font-weight: bold;
+}
+
+.esercizio:hover {
+    border-radius: 30px;
+    padding: 1em 1em;
+    margin: 3em;
+    background-color: lightgrey;
+    box-shadow: 5px 5px 30px red, -5px -5px 30px rgba(255, 0, 0, 0.7);
+}
