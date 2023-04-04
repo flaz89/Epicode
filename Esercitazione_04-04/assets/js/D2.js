@@ -13,8 +13,8 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function risposta1() {
-  let string = "<strong>String:</strong> equivale ad un testo composto da \"n\" caratteri (lettere / numeri / simboli)";
-  let num = "<strong>Number:</strong> accetta qualisiasi valore numerico intero o decimale. Per i valori decimali è necessario utilizzare la \",\"."
+  let string = "<strong>String:</strong> equivale ad un testo composto da \"n\" caratteri (lettere / numeri / simboli), il tutto racchiuso tra apici o virgolette";
+  let num = "<strong>Number:</strong> accetta qualisiasi valore numerico intero o decimale. Per i valori decimali è necessario utilizzare il \".\"."
   let bool = "<strong>Boolean:</strong> accetta un valore \"vero\" o \"falso\""
   let nul = "<strong>Null:</strong> valore che indica l'assenza intenzionale di un dato valore";
   let und = "<strong>Undefined:</strong> valore che identifica la mancanza di un valora ad una determinata variabile nonostante ci si aspetti che ritorni qualcosa";
