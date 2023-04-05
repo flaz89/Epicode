@@ -6,8 +6,8 @@
 function bigNum() {
   return Math.max(5, 9);
 }
-//document.getElementById("es1").innerHTML = bigNum;
-//document.getElementById("es1_1").innerHTML = bigNum();
+document.getElementById("es1").innerHTML = bigNum;
+document.getElementById("es1_1").innerHTML = bigNum();
 
 
 /* ESERCIZIO 2
@@ -24,8 +24,8 @@ function notEqual() {
   }
 }
 
-//document.getElementById("es2").innerHTML = notEqual;
-//document.getElementById("es2_1").innerHTML = notEqual();
+document.getElementById("es2").innerHTML = notEqual;
+document.getElementById("es2_1").innerHTML = notEqual();
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -40,9 +40,9 @@ function fractionFive(num) {
     return "\"numCheck\" is not divisible by 5";
   }
 }
-//document.getElementById("es3").innerHTML = "var numCheck = 35;";
-//document.getElementById("es3_1").innerHTML = fractionFive;
-//document.getElementById("es3_2").innerHTML = fractionFive(numCheck);
+document.getElementById("es3").innerHTML = "var numCheck = 35;";
+document.getElementById("es3_1").innerHTML = fractionFive;
+document.getElementById("es3_2").innerHTML = fractionFive(numCheck);
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -60,9 +60,9 @@ function eightCheck() {
     return `Sum between ${a} and ${b} is equal to 8`;
   }
 }
-//document.getElementById("es4").innerHTML = "var a = 5;<br>var b = 3;";
-//document.getElementById("es4_1").innerHTML = eightCheck;
-//document.getElementById("es4_2").innerHTML = eightCheck();
+document.getElementById("es4").innerHTML = "var a = 5;<br>var b = 3;";
+document.getElementById("es4_1").innerHTML = eightCheck;
+document.getElementById("es4_2").innerHTML = eightCheck();
 
 
 /* ESERCIZIO 5
@@ -89,9 +89,9 @@ function total() {
   }
 }
 
-//document.getElementById("es5").innerHTML = "var totalShoppingCart = 43;<br>var calendarDay = \"Black Friday\";";
-//document.getElementById("es5_1").innerHTML = total;
-//document.getElementById("es5_2").innerHTML = total();
+document.getElementById("es5").innerHTML = "var totalShoppingCart = 43;<br>var calendarDay = \"Black Friday\";";
+document.getElementById("es5_1").innerHTML = total;
+document.getElementById("es5_2").innerHTML = total();
 
 
 /* ESERCIZIO 6
@@ -122,6 +122,8 @@ function sortFromBig() {
 /* SCRIVI QUI LA TUA RISPOSTA */
 var givenNum = 8;
 console.log(typeof givenNum);
+document.getElementById("es8").innerHTML = "var givenNum = 8;<br>console.log(typeof givenNum);";
+document.getElementById("es8_1").innerHTML = typeof givenNum;
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -136,7 +138,9 @@ function isEven() {
     return "number is odd";
   }
 }
-console.log(isEven());
+document.getElementById("es9").innerHTML = "var evenNum = 17;";
+document.getElementById("es9_1").innerHTML = isEven;
+document.getElementById("es9_2").innerHTML = isEven();
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -162,6 +166,10 @@ function valCorrect() {
     }
 }
 console.log(valCorrect());
+document.getElementById("es10").innerHTML = "let val = 7;";
+document.getElementById("es10_1").innerHTML = valCorrect;
+document.getElementById("es10_2").innerHTML = valCorrect();
+
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
@@ -171,8 +179,12 @@ const me = {
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
-me.city = "Toronoto";
+me.city = "Toronto";
 console.log(me);
+
+document.getElementById("es11").innerHTML = me.name + "<br>" +me.lastName + "<br>" +me.skills;
+document.getElementById("es11_1").innerHTML = "me.city = \"Toronto\";";
+document.getElementById("es11_2").innerHTML = me.name + "<br>" +me.lastName + "<br>" + me.skills + "<br>" + me.city;
 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -185,6 +197,9 @@ console.log(me);
 delete me.lastName;
 console.log(me);
 
+document.getElementById("es12").innerHTML = "delete me.lastName;";
+document.getElementById("es12_1").innerHTML = me.name + "<br>" + me.skills + "<br>" + me.city;
+
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
@@ -192,6 +207,9 @@ console.log(me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 me.skills.splice(2, 1);
 console.log(me);
+
+document.getElementById("es13").innerHTML = "me.skills.splice(2, 1);";
+document.getElementById("es13_1").innerHTML = me.name + "<br>" + me.skills + "<br>" + me.city;
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
@@ -201,9 +219,16 @@ var emptyArr = [];
 emptyArr.unshift(1,2,3,4,5,6,7,8,9,10);
 console.log(emptyArr);
 
+document.getElementById("es14").innerHTML = "var emptyArr = [];";
+document.getElementById("es14_1").innerHTML = "emptyArr.unshift(1,2,3,4,5,6,7,8,9,10);";
+document.getElementById("es14_2").innerHTML = emptyArr;
+
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 emptyArr.splice(emptyArr.length - 1, 1, 100);
-console.log(emptyArr);
+
+document.getElementById("es15").innerHTML = "emptyArr.splice(emptyArr.length - 1, 1, 100);";
+document.getElementById("es15_1").innerHTML = emptyArr;
