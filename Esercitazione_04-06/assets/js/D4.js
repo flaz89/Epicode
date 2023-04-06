@@ -240,6 +240,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
 Usa uno più for loop per raggiungere il risultato
 
+
 (tip: cerca un metodo degli array per rimuovere un elemento)
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
@@ -248,3 +249,9 @@ Una volta fatto crea un conosle.log per controllare la proprietà length di "cha
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+
+var random = Math.floor(Math.random(starWarsCharacters.length) * 10);
+console.log(starWarsCharacters[random]);
+for (let element in starWarsCharacters[random]) {
+  console.log (element);
+}
