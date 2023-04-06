@@ -115,7 +115,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   characters.push(starWarsCharacters[i].name);
 }
 
-//console.log(characters);
+console.log(characters);
 
 
 /* ESERCIZIO 3
@@ -125,7 +125,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 var femaleCharacters = [];
 
 femaleCharacters.push({ name: "Leia Organa", hair_color: "brown", eye_color: "brown" });
-//console.log(femaleCharacters);
+console.log(femaleCharacters);
 
 
 /* ESERCIZIO 4
@@ -140,7 +140,7 @@ var eyeColor = {
   "blue-gray": []
 };
 
-//console.log(eyeColor);
+console.log(eyeColor);
 
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
@@ -167,7 +167,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   }
 }
 
-//console.log(eyeColor);
+console.log(eyeColor);
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
@@ -198,31 +198,25 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-  switch (totalMass) {
-    case (totalMass < 500):
+  switch (true) {
+    case totalMass < 500:
       console.log("Ship is under loaded");
       break;
-    case (totalMass == 500):
+    case totalMass == 500:
       console.log("Ship is half loaded");
       break;
-    case (totalMass > 700 && totalMass < 900):
+    case totalMass > 700 && totalMass < 900:
       console.log("Warning: Load is over 700");
       break;
-    case (totalMass > 900 && totalMass < 1000):
+    case totalMass > 900 && totalMass < 1000:
       console.log("Critical Load: Over 900");
       break;
-    case (totalMass > 1000):
+    case totalMass > 1000:
       console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
       break;
   }
 
 
-/*var grigio = "topo";
-switch (grigio) {
-  case "topo":
-    console.log("è un topo");
-    break;
-}+/
 
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
@@ -233,7 +227,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     starWarsCharacters[i].gender = "robot";
   }
 }
-//console.log(starWarsCharacters);
+console.log(starWarsCharacters);
 
 /* EXTRA ESERCIZIO 9
 
@@ -245,6 +239,10 @@ Usa uno più for loop per raggiungere il risultato
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
+console.log(femaleCharacters);
+function removeStrings() {
+  
+}
 
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
@@ -258,5 +256,4 @@ function objString() {
 }
 objString();
 
-console.log(starWarsCharacters[0].value);
 
