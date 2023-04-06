@@ -251,7 +251,12 @@ Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharac
 */
 
 var random = Math.floor(Math.random(starWarsCharacters.length) * 10);
-console.log(starWarsCharacters[random]);
-for (let element in starWarsCharacters[random]) {
-  console.log (element);
+
+function objString() {
+  let obj = starWarsCharacters[random];
+  console.log(`name: ${obj.name}, height: ${obj.height}, mass: ${obj.mass}, hair_color: ${obj.hair_color}, skin_color: ${obj.skin_color}, eye_color: ${obj.eye_color}, birth_year: ${obj.birth_year}, gender: ${obj.gender}`);
 }
+objString();
+
+console.log(starWarsCharacters[0].value);
+
