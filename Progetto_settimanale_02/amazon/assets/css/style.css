@@ -65,6 +65,11 @@ li {
     font-size: 1.2em;
 }
 
+.navMenu:hover {
+    font-weight: 900;
+    text-shadow: 4px 4px 8px rgba(244, 95, 5, 0.5), -4px -4px 8px rgba(244, 95, 5, 0.5);
+}
+
 /*--------------- MAIN ------------------*/
 main {
     background-color: #E9EDEE;
@@ -153,7 +158,6 @@ aside {
 
 aside a {
     font-weight: 700;
-    margin-left: 1em;
     color: white;
     font-size: 1.2em;
 }
