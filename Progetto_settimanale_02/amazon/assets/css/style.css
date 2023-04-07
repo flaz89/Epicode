@@ -1,0 +1,168 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header, footer {
+     background-color: #222F3E;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    display: inline;
+}
+
+#shop {
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 1em;
+    color: #378990;
+    font-size: 1.2em;
+}
+
+#box_menu, aside {
+    background-color: #354759;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+/*--------------- HEADER ------------------*/
+header {
+    text-align: left;
+}
+
+header img {
+    width: 9em;
+    margin: 0.7em 2em;
+}
+
+#box_menu {
+    padding: 0.6em 2em;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    color: white;
+    margin-right: 1.5em;
+}
+
+.navMenu, #cta_main { /*proprietà usate sia per "a" nel menu della nav che per la CTA del main*/
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/*--------------- MAIN ------------------*/
+main {
+    background-color: #E9EDEE;
+    padding: 2em;
+}
+
+/*box_cta_main*/
+#box_cta_main {
+    background-color: #F45F05;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+
+/*section1*/
+#box_banner {
+   padding: 3.3em 0;
+    color: white;
+    background-image: url(/amazon/assets/img/bg-image.png);
+    background-size: contain;
+    margin-bottom: 2em;
+}
+
+#section1 h1 {
+    font-size: 2.5em;
+}
+
+/*section2*/
+#section2 {
+    background-color: white;
+    text-align: left;
+    padding: 1.2em;
+    margin-bottom: 2em;
+}
+
+#box_images {
+    text-align: center;
+}
+
+.image {
+    display: inline-block;
+    height: 480px;
+    width: 360px;
+    margin: 1.2em 0;
+    border-radius: 2rem;
+    box-shadow: 0.25em 0.25em 1.5em gray;
+    margin-right: 3em;
+}
+
+.image:nth-last-child(1) {
+    margin-right: 0;
+}
+
+#image1 {
+    background-image: url(/amazon/assets/img/img_1.jpg);
+    background-position: center;
+}
+
+#image2 {
+    background-image: url(/amazon/assets/img/img_2.jpg);
+    background-position: center;
+}
+
+#image3 {
+    background-image: url(/amazon/assets/img/img_3.jpg);
+    background-position: center;
+}
+
+#image4 {
+    background-image: url(/amazon/assets/img/img_4.jpg);
+    background-position: center;
+}
+
+/*section3 - section4*/
+.box_section {
+    margin-bottom: 2em;
+}
+
+.box_section img {
+    width: 100%;
+}
+
+/*--------------- ASIDE ------------------*/
+aside {
+    padding: 1.2em;
+}
+
+aside a {
+    font-weight: 700;
+    margin-left: 1em;
+    color: white;
+    font-size: 1.2em;
+}
+
+/*--------------- FOOTER ------------------*/
+footer {
+    padding: 4em 0;
+}
+
+footer img {
+    width: 14em;
+}
