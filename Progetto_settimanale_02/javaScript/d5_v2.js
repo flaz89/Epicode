@@ -71,7 +71,8 @@ function randomPlate() {
 }
 
 for (let i = 0; i < cars.length; i++) {
-    cars[i].licensePlate = randomPlate().toString().replaceAll(",", ""); //il metodo ".replaceAll()" sono andato a cercarlo su MDN anche se non l'abbiamo mai visto"
+    cars[i].licensePlate = randomPlate().toString().replaceAll(",", ""); 
+    //il metodo ".replaceAll()" sono andato a cercarlo su MDN anche se non l'abbiamo mai visto per rimuovere le virgole ed avere un valore più pulito per "license plate"
 }
 
 console.log(cars);
