@@ -106,7 +106,8 @@ function maxShoppingCart(arr) {
     for(let i = 0; i < shoppingCart.length; i++) {
         expensiveObj.push(shoppingCart[i].price);
     }
-    let fancyObj = Math.max(...expensiveObj);
+    let fancyPrice = Math.max(...expensiveObj);
+    
 }
 
 maxShoppingCart(shoppingCart);
