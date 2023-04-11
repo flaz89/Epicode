@@ -1,3 +1,15 @@
+function giveMeRandom(numX) {
+    let randomArr = [];
+
+    for (let i = 0; i <= numX; i++) {
+        let randomNum = Math.floor(Math.random() * 11);
+        randomArr.push(randomNum);
+    }
+    return randomArr;
+}
+
+const newArr = giveMeRandom(9);
+console.log(newArr);
 // Esercizi aggiuntivi (facoltativi) per D4
 
 /* EXTRA 1
@@ -6,7 +18,20 @@
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
 
+
 /* SCRIVI QUI LA TUA RISPOSTA */
+function checkArray(arr) {
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i] > 5) {
+            console.log(arr[i]);
+            sum += arr[i];
+        }
+    }
+    console.log(sum);
+}
+checkArray(newArr);
+
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".

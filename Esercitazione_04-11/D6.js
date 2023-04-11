@@ -169,4 +169,6 @@ function giveMeRandom(numX) {
     return randomArr;
 }
 
-console.log(giveMeRandom(3));
+console.log(giveMeRandom(8));
+
+
