@@ -2,7 +2,7 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log(). SLICE/CONCAT
 */
-console.log("***ESERCIZIO 1***")
+console.log("------------------ ESERCIZIO 1 ------------------")
 function cooncatString(str1, str2) {
   let sliceString1 = str1.slice(0, 2);
   console.log(sliceString1);
@@ -16,7 +16,7 @@ cooncatString("ciao", "bello");
 /* ESERCIZIO 2
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso). FOR / MATH (mettere un verifica di non ripetizione degli stessi numeri)
 */
-console.log("***ESERCIZIO 2***")
+console.log("------------------ ESERCIZIO 2 ------------------")
 
 function randomArr() {
   let arr = [];
@@ -32,7 +32,7 @@ randomArr();
 /* ESERCIZIO 3
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare) FILTER
 */
-console.log("***ESERCIZIO 3***")
+console.log("------------------ ESERCIZIO 3 ------------------")
 
 var exerciseArr = [2, 7, 0, 6, 9, 4];
 var evenArr = exerciseArr.filter(i => i % 2 === 0);
@@ -43,7 +43,7 @@ console.log(evenArr);
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array 
 */
-console.log("***ESERCIZIO 4***")
+console.log("------------------ ESERCIZIO 4 ------------------")
 console.log(exerciseArr);
 
 var sum = arr => {
@@ -60,7 +60,7 @@ console.log(sum(exerciseArr));
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE) parametri (totale, valore)
 */
-console.log("***ESERCIZIO 5***")
+console.log("------------------ ESERCIZIO 5 ------------------")
 console.log(exerciseArr);
 var reduceSum = exerciseArr.reduce((total, num) => {
   return total + num;
@@ -71,7 +71,7 @@ console.log(reduceSum);
 /* ESERCIZIO 6
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n MAP
 */
-console.log("***ESERCIZIO 6***")
+console.log("------------------ ESERCIZIO 6 ------------------")
 console.log(exerciseArr);
 
 var newArrMap = (arr, val) => {
@@ -84,7 +84,7 @@ console.log(newArrMap(exerciseArr, 3));
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
-console.log("***ESERCIZIO 8***")
+console.log("------------------ ESERCIZIO 8 ------------------")
 
 var stringArr = ["ciao", "elementare", "intramontabile", "supercalifragilistichespiralidoso"];
 var newStringNum = [];
@@ -97,7 +97,7 @@ console.log(newStringNum);
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-console.log("***ESERCIZIO 9***")
+console.log("------------------ ESERCIZIO 9 ------------------")
 
 var arrOdd = () => {
   let arr = [];
@@ -226,7 +226,7 @@ const movies = [
 /* ESERCIZIO 10
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-console.log("***ESERCIZIO 10***")
+console.log("------------------ ESERCIZIO 10 ------------------")
 
 var oldestMovie = arr => {
   let arrYear = [];
@@ -248,7 +248,7 @@ oldestMovie(movies);
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
-console.log("***ESERCIZIO 11***")
+console.log("------------------ ESERCIZIO 11 ------------------")
 
 var numFilInArr = arr => {
   return movies.length;
@@ -259,7 +259,7 @@ console.log(numFilInArr());
 /* ESERCIZIO 12
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
-console.log("***ESERCIZIO 12***")
+console.log("------------------ ESERCIZIO 12 ------------------")
 
 var filmTitle = (arr) => {
   let arrTitle = [];
@@ -274,7 +274,7 @@ filmTitle(movies);
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
-console.log("***ESERCIZIO 13***")
+console.log("------------------ ESERCIZIO 13 ------------------")
 
 var newMillenialDate = new Date("Jan, 01, 2001");
 
@@ -287,6 +287,7 @@ var millenialMovies = arr => {
 }
 
 millenialMovies(movies);
+
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
@@ -294,3 +295,14 @@ millenialMovies(movies);
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+console.log("------------------ ESERCIZIO 15 ------------------")
+
+var sumYears = arr => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + Number(arr[i].Year);
+  }
+  console.log(sum);
+}
+
+sumYears(movies);
