@@ -291,6 +291,16 @@ millenialMovies(movies);
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
+console.log("------------------ ESERCIZIO 14 ------------------")
+
+var selectMovie = id => {
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].imdbID === id) {
+      console.log(movies[i]);
+    }
+  }
+}
+selectMovie("tt4154796");
 
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
