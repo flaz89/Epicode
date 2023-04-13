@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+fieldset {
+    text-align: center;
+}
+
+main {
+    border: 1px solid red;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.poster, .title {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid;
+}

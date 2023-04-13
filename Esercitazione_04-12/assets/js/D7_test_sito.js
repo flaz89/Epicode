@@ -6,7 +6,8 @@ const movies = [
     imdbID: "tt0120737",
     Type: "movie",
     Poster:
-      "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
+      "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+    trailer: "https://www.youtube.com/embed/V75dMMIW2B4?controls=0"
   },
   {
     Title: "The Lord of the Rings: The Return of the King",
@@ -109,96 +110,27 @@ const movies = [
   }
 ];
 
-/* ESERCIZIO 10
-  Scrivi una funzione per trovare il film più vecchio nell'array fornito.
-*/
-console.log("------------------ ESERCIZIO 10 ------------------")
 
-var oldestMovie = arr => {
-  let arrYear = [];
-  for(let movie in movies) {
-    arrYear.push(movies[movie].Year);
-  }
-  let oldestYear = Math.min(...arrYear);
-  //console.log(oldestYear);
 
-  for (let i = 0; i < movies.length; i++) {
-    if (movies[i].Year == oldestYear) {
-        console.table(movies[i]);
+
+console.log("------------------ ESERCIZIO 16 -----------------------------------------------------------");
+
+var btnSelect = document.getElementById("select");
+var select = document.getElementById("movieList");
+
+for (let i = 0; i < movies.length; i++) {
+    select.innerHTML += `<option value="${movies[i].imdbID}">${movies[i].Title}</option>`;
+}
+
+btnSelect.addEventListener("click", () => {
+    var selectedID = select.value;
+    for (let i = 0; i < movies.length; i++) {
+        if (movies[i].imdbID === selectedID) {
+            document.getElementById("container").innerHTML += `\
+            <div id="poster"><img src=${movies[i].Poster} alt="${movies[i].Title}-poster"></div>\
+            <div id="title"><h1>${movies[i].Title}</h1></div>\
+            <div id="trailer"><iframe width="70%" height="400px" src="${movies[i].trailer}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+        }
     }
-  }
-}
-
-oldestMovie(movies);
-
-/* ESERCIZIO 11
-  Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
-*/
-console.log("------------------ ESERCIZIO 11 ------------------")
-
-var numFilInArr = arr => {
-  return movies.length;
-}
-
-console.log(numFilInArr());
-
-/* ESERCIZIO 12
-  Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
-*/
-console.log("------------------ ESERCIZIO 12 ------------------")
-
-var filmTitle = (arr) => {
-  let arrTitle = [];
-  for(let movie in movies) {
-    arrTitle.push(movies[movie].Title);
-  }
-  console.log(arrTitle);
-}
-
-filmTitle(movies);
-
-/* ESERCIZIO 13
-  Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
-*/
-console.log("------------------ ESERCIZIO 13 ------------------")
-
-var newMillenialDate = new Date("Jan, 01, 2001");
-
-var millenialMovies = arr => {
-  for (let i = 0; i < movies.length; i++) {
-    if (Number(movies[i].Year) >= newMillenialDate.getFullYear()) {
-      console.log(movies[i].Title);
-    }
-  }
-}
-
-millenialMovies(movies);
-
-/* ESERCIZIO 14
-  Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
-*/
-console.log("------------------ ESERCIZIO 14 ------------------")
-
-var selectMovie = id => {
-  for (let i = 0; i < movies.length; i++) {
-    if (movies[i].imdbID === id) {
-      console.log(movies[i]);
-    }
-  }
-}
-selectMovie("tt4154796");
-
-/* ESERCIZIO 15
-  Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
-*/
-console.log("------------------ ESERCIZIO 15 ------------------")
-
-var sumYears = arr => {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum = sum + Number(arr[i].Year);
-  }
-  console.log(sum);
-}
-
-sumYears(movies);
+    
+})
