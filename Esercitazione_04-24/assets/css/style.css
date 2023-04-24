@@ -317,14 +317,15 @@ footer a {
     }
 
 
-    iframe {
-        width: 50%;
+    iframe, section {
+        width: 49%;
+        vertical-align: middle;
+        display: inline-block;
+        height: 150px;
     }
 
     section {
-        width: 49%;
         border-radius: 20px;
-        display: inline-block;
     }
 
     section h2 {
