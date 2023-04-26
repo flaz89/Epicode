@@ -130,5 +130,23 @@ h2 {
 
 h3 {
     color: #742305;
+    margin-bottom: 1.2em;
+    font-weight: 900;
+}
+
+article {
+    background-color: #fef7e2;
+    padding: 1.2em;
+    border-radius: 1em;
+}
+
+article p {
+    color: #742305;
+    margin-bottom: 1.2em;
+    font-size: 0.8em;
+}
+
+article img {
+    width: 100%;
 }
 
