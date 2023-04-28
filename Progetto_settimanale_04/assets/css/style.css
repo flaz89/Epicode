@@ -386,6 +386,12 @@ aside {
 }
 
 
+/*-------------------------------------------------------------*/
+
+
+/*-------------------- MEDIA QUERY ----------------------------*/
+
+
 @media screen and (max-width: 1265px) {
     #hero_M {
         position: absolute;
@@ -441,6 +447,10 @@ aside {
     .button a {
         padding: .5em 1em;
         font-size: 1em;
+    }
+
+    #aside_content h2 {
+        font-size: 1.5em;
     }
     
 }
