@@ -143,6 +143,11 @@ nav {
     font-size: 1.2em;
 }
 
+#hero button a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /*-------------------------------------------- SECTION ------------------------------------------------*/
 section {
@@ -444,6 +449,10 @@ aside {
         position: relative;
     }
 
+    #sticky_content {
+
+    }
+
     .button a {
         padding: .5em 1em;
         font-size: 1em;
@@ -497,12 +506,26 @@ aside {
         display: none;
     }
 
+    .button {
+        flex-grow: 1;
+    }
+
     .button a {
         padding: .5em;
         font-size: 1em;
     }
 
-    #aside_content h2 {
+    #last_line span {
+        display: none;
+    }
+
+
+    #buttons_container {
+        justify-content: center;
+    }
+
+    #sticky_content h2 {
         font-size: 1.2em;
+        text-align: center;
     }
 }
