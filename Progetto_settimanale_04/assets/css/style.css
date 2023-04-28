@@ -255,6 +255,7 @@ article {
 #article_content {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 #article_img_name {
