@@ -454,3 +454,55 @@ aside {
     }
     
 }
+
+@media screen and (max-width: 730px) {
+    #hero_M {
+        display: none;
+    }
+
+    ul li:nth-child(-n+3) {
+        display: none;
+    }
+
+    #section_posts_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #nav_container.changeBack {
+        padding: 1.4em 5%;
+    }
+
+    #hero {
+        padding-left: 5%;
+    }
+
+    main {
+        padding: 0 5%;
+    }
+
+    section {
+        padding: 2.5em 5%;
+    }
+
+    ul li:nth-child(-n+4) {
+        display: none;
+    }
+
+    .button a {
+        padding: .5em;
+        font-size: 1em;
+    }
+
+    #aside_content h2 {
+        font-size: 1.2em;
+    }
+}
