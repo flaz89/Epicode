@@ -1,5 +1,3 @@
-
-
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Spectral', serif;*/
 
@@ -244,7 +242,7 @@ article {
     flex-direction: column;
     row-gap: 2.5em;
 }
- 
+
 
 #article_post {
     display: flex;
@@ -451,9 +449,16 @@ aside {
     }
 
     #sticky_content {
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
+    #buttons_container {
+        display: flex;
+        justify-content: center;
+    }
+    
     .button a {
         padding: .5em 1em;
         font-size: 1em;
@@ -462,7 +467,7 @@ aside {
     #aside_content h2 {
         font-size: 1.5em;
     }
-    
+
 }
 
 @media screen and (max-width: 730px) {
