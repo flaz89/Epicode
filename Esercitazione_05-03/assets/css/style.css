@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(48, 48, 48);
+}
+
+.nav-link {
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: white
+}
+
+.custom-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    border-color: white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg-agency {
+    background-color: rgb(216, 40, 119);
+}
+
+.txt-agency {
+    color: rgb(216, 40, 119);
+}
+
+.border-custom {
+    border-color: rgb(216, 40, 119);;
+}
+
+.hero {
+    margin-top: 8em;
+}
+
+.btn-custom {
+    background-color: rgb(216, 40, 119);
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: rgb(167, 32, 93);
+    
+}
+
+.bg-shadow {
+    box-shadow: 0px 5px 30px rgba(216, 40, 119, 0.932);
+}
