@@ -32,6 +32,21 @@ $grayBell: #f5f4f8;
     }
 }
 
+#avatar-dropdown.dropdown-menu[data-bs-popper] {
+    position: absolute;
+    transform: translateX(-210px);
+    
+}
+
+#personal-drop-info {
+    padding: 0 1em;
+
+    span {
+        position: absolute;
+        transform: translateX(-15px);
+    }
+}
+
 @media screen and (max-width:992px) {
     #icon-nav {
         right: 85px;

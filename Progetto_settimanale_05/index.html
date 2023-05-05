@@ -90,14 +90,40 @@
                                 d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
                         </svg>
                     </div>
-                    <div id="avatar-nav" class="col position-relative">
+                    <div id="avatar-nav" class="col position-relative dropdown" type="button" data-bs-toggle="dropdown">
                         <span
                             class="position-absolute translate-middle badge border border-light border-2 rounded-circle"><span
                                 class="visually-hidden">unread messages</span></span>
                         <img class="rounded-circle" src="assets/img/avatar-1.jpg" alt="" width="40px" height="40px">
+                        <ul id="avatar-dropdown" class="dropdown-menu">
+
+                            <li class="d-flex pt-2 border-bottom border-1">
+                                <div id="personal-drop-info" class="position-relative">
+                                    <span class=" badge border border-light border-2 rounded-circle"><span
+                                            class="visually-hidden">unread messages</span></span>
+                                    <img class="rounded-circle" src="assets/img/avatar-1.jpg" alt="" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="d-flex flex-column pe-4 ">
+                                    <p class="fw-bold mb-0">Annette Black</p>
+                                    <p class="fw-lighter mb-2">annette@geeksui.com</p>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person pe-2"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-star pe-2"></i> Subscription</a></li>
+                            <li class="border-bottom border-1"><a class="dropdown-item" href="#"><i
+                                        class="bi bi-gear pe-2"></i> Settings</a></li>
+                            <li class="py-2"><a class="dropdown-item" href="#"><i class="bi bi-power pe-2"></i> Sign
+                                    out</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+
+
+
+            
         </nav>
 
         <div id="hero_section" class="container-fluid"> <!--hero_section-->
@@ -202,18 +228,24 @@
 
                 <h2 class=" pt-5 pb-3">Reccomended to you</h2>
                 <div class="container d-flex gap-2 ps-0 position-relative">
-                    <button class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                          </svg>
-                        </button>
-                    <button class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                              </svg>
-                            </button>
-                    
-                        
+                    <button
+                        class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+
+
                     <div class="card col-6 col-lg-3">
                         <img src="assets/img/course-graphql.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -221,12 +253,11 @@
                             <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 2h 40m <i
                                     class="bi bi-bar-chart-fill"></i> Advance</p>
                             <p class="card-text fs-6 display-6"><span>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i> 2.5</span> <span
-                                    class="text-rating">(1,500)</span></p>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i> 2.5</span> <span class="text-rating">(1,500)</span></p>
                             <p class="card-text"><span class="text-price">$500 </span><span
                                     class="text-rating text-decoration-line-through">$600</span></p>
                         </div>
@@ -250,13 +281,12 @@
                             <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 4h 10m <i
                                     class="bi bi-bar-chart-fill"></i> Advance</p>
                             <p class="card-text fs-6 display-6"><span>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                                <i class="bi bi-star"></i> 
-                                3.5</span> <span
-                                    class="text-rating">(7500)</span></p>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                    3.5</span> <span class="text-rating">(7500)</span></p>
                             <p class="card-text"><span class="text-price">$700 </span><span
                                     class="text-rating text-decoration-line-through">$850</span></p>
                         </div>
@@ -327,18 +357,24 @@
 
                 <h2 class=" pt-5 pb-3">Most Popular</h2>
                 <div class="container d-flex gap-2 ps-0 position-relative">
-                    <button class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                          </svg>
-                        </button>
-                    <button class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                              </svg>
-                            </button>
-                    
-                        
+                    <button
+                        class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+
+
                     <div class="card col-6 col-lg-3">
                         <img src="assets/img/course-html.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -373,13 +409,12 @@
                             <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 4h 10m <i
                                     class="bi bi-bar-chart-fill"></i> Advance</p>
                             <p class="card-text fs-6 display-6"><span>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                                <i class="bi bi-star"></i> 
-                                3.5</span> <span
-                                    class="text-rating">(7500)</span></p>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                    3.5</span> <span class="text-rating">(7500)</span></p>
                             <p class="card-text"><span class="text-price">$700 </span><span
                                     class="text-rating text-decoration-line-through">$850</span></p>
                         </div>
@@ -450,18 +485,24 @@
 
                 <h2 class=" pt-5 pb-3">Trending</h2>
                 <div class="container d-flex gap-2 ps-0 position-relative">
-                    <button class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                          </svg>
-                        </button>
-                    <button class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                              </svg>
-                            </button>
-                    
-                        
+                    <button
+                        class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </button>
+
+
                     <div class="card col-6 col-lg-3">
                         <img src="assets/img/course-gatsby.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -571,7 +612,7 @@
         </section>
     </main>
 
-     <!------------------------------------------------ FOOTER --------------------------------------------->
+    <!------------------------------------------------ FOOTER --------------------------------------------->
     <footer>
         <div class="row d-flex justify-content-between">
             <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-center p-3">
