@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!------------------------------------------------ HEADER --------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg "> <!--nav-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/img/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>
+                            <path stroke='rgb(116, 78, 253)' stroke-linecap='round' stroke-miterlimit='10'
+                                stroke-width='2' d='M4 7h22M4 15h22M4 23h22' />
+                        </svg></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Browse
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Landing
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="icon-nav" class="row"> <!--avatar & bell-->
+                    <div id="avatar-bell"
+                        class="col d-flex align-items-center justify-content-center position-relative rounded-circle">
+                        <span
+                            class="position-absolute  translate-middle badge border border-light border-2 rounded-circle"><span
+                                class="visually-hidden">unread messages</span></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg>
+                    </div>
+                    <div id="avatar-nav" class="col position-relative">
+                        <span
+                            class="position-absolute translate-middle badge border border-light border-2 rounded-circle"><span
+                                class="visually-hidden">unread messages</span></span>
+                        <img class="rounded-circle" src="assets/img/avatar-1.jpg" alt="" width="40px" height="40px">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="hero_section" class="container-fluid"> <!--hero_section-->
+            <div class="container">
+                <div class="row pt-4 pt-md-0">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mb-4 mb-lg-3">
+                        <h1 class="text-white">Welcome Web Students</h1>
+                        <h3 class="mb-3 display-6 fs-6">Hand-picked Instructor and expertly crafted courses, designed
+                            for the modern students and entrepreneur.</h3>
+                        <div class="row">
+                            <div class="column">
+                                <button type="button" class="btn btn-green btn-sm border-0 rounded-1">Browse
+                                    Courses</button>
+                                <button type="button" class="btn btn-white btn-sm border-0 rounded-1">Are You
+                                    Instructor?</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <img src="assets/img/hero-img.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------------------------------ MAIN --------------------------------------------->
+
+    <main>
+
+        <section class="border-bottom border-2"> <!--promo_section-->
+            <div id="promo" class="container pb-4 pb-md-0">
+                <div class="row">
+
+                    <div class="col-12 p-3 col-lg-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div
+                                    class=" icons col d-flex align-items-center justify-content-center position-relative rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#c48135"
+                                        class="bi bi-camera-video" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-center">
+                                <h4 class="mb-0 ">30.000 online courses</h4>
+                                <p class="mb-0 ">Enjoy a variety of fresh topics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 p-3 col-lg-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div
+                                    class="icons col d-flex align-items-center justify-content-center position-relative rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#c48135"
+                                        class="bi bi-people" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-center">
+                                <h4 class="mb-0">Expert instruction</h4>
+                                <p class="mb-0">Find the right instructor for you</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 p-3 col-lg-4">
+                        <div class="row">
+                            <div class="col-2">
+                                <div
+                                    class="icons col d-flex align-items-center justify-content-center position-relative rounded-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#c48135"
+                                        class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                        <path
+                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-center">
+                                <h4 class="mb-0 ">Lifetime access</h4>
+                                <p class="mb-0 ">Learn on your schedule</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="carousel_section"> <!--carousel_section-->
+
+            <div class="container px-4">
+
+                <h2 class=" pt-5 pb-3">Reccomended to you</h2>
+                <div class="container d-flex gap-2 ps-0 position-relative">
+                    <button class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                          </svg>
+                        </button>
+                    <button class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg>
+                            </button>
+                    
+                        
+                    <div class="card col-6 col-lg-3">
+                        <img src="assets/img/course-graphql.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">GraphQL: introduction to graphQL for beginners</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 2h 40m <i
+                                    class="bi bi-bar-chart-fill"></i> Advance</p>
+                            <p class="card-text fs-6 display-6"><span>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i> 2.5</span> <span
+                                    class="text-rating">(1,500)</span></p>
+                            <p class="card-text"><span class="text-price">$500 </span><span
+                                    class="text-rating text-decoration-line-through">$600</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-5.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Brooklin Simmons</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-lg-3">
+                        <img src="assets/img/course-javascript.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">A Complete Beginner's
+                                Guide to JavaScript</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 4h 10m <i
+                                    class="bi bi-bar-chart-fill"></i> Advance</p>
+                            <p class="card-text fs-6 display-6"><span>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i> 
+                                3.5</span> <span
+                                    class="text-rating">(7500)</span></p>
+                            <p class="card-text"><span class="text-price">$700 </span><span
+                                    class="text-rating text-decoration-line-through">$850</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-1.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Jenny Wilson</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 d-none d-lg-block col-6">
+                        <img src="assets/img/course-node.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">Beginning Node.js, Express
+                                & MongoDB Development</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 2h 00m <i
+                                    class="bi bi-bar-chart-fill"></i> Intermediate</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star"></i> 4</span> <span
+                                    class="text-rating">(15,700)</span></p>
+                            <p class="card-text"><span class="text-price">$800 </span><span
+                                    class="text-rating text-decoration-line-through">$950</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-8.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Sina Ray</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 d-none d-lg-block col-6">
+                        <img src="assets/img/course-laravel.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">Laravel: The Ultimate
+                                Beginner's Guide to Lear</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 1h 00m <i
+                                    class="bi bi-bar-chart-fill"></i> Beginner</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 4.5</span> <span
+                                    class="text-rating">(2,500)</span></p>
+                            <p class="card-text"><span class="text-price">$170 </span><span
+                                    class="text-rating text-decoration-line-through">$220</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-7.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Sobo Rikhan</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class=" pt-5 pb-3">Most Popular</h2>
+                <div class="container d-flex gap-2 ps-0 position-relative">
+                    <button class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                          </svg>
+                        </button>
+                    <button class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg>
+                            </button>
+                    
+                        
+                    <div class="card col-6 col-lg-3">
+                        <img src="assets/img/course-html.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">HTML FUll Course - Build a
+                                Website Tutorial</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 3h 16m <i
+                                    class="bi bi-bar-chart-fill"></i> Beginner</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star"></i><i class="bi bi-star"></i> 3</span> <span
+                                    class="text-rating">(1,600)</span></p>
+                            <p class="card-text"><span class="text-price">$550 </span><span
+                                    class="text-rating text-decoration-line-through">$700</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-6.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Miston Wilson</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-lg-3">
+                        <img src="assets/img/course-javascript.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">A Complete Beginner's
+                                Guide to JavaScript</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 4h 10m <i
+                                    class="bi bi-bar-chart-fill"></i> Advance</p>
+                            <p class="card-text fs-6 display-6"><span>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i> 
+                                3.5</span> <span
+                                    class="text-rating">(7500)</span></p>
+                            <p class="card-text"><span class="text-price">$700 </span><span
+                                    class="text-rating text-decoration-line-through">$850</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-1.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Jenny Wilson</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 d-none d-lg-block col-6">
+                        <img src="assets/img/course-node.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">Beginning Node.js, Express
+                                & MongoDB Development</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 2h 00m <i
+                                    class="bi bi-bar-chart-fill"></i> Intermediate</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star"></i> 4</span> <span
+                                    class="text-rating">(15,700)</span></p>
+                            <p class="card-text"><span class="text-price">$800 </span><span
+                                    class="text-rating text-decoration-line-through">$950</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-8.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Sina Ray</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 d-none d-lg-block col-6">
+                        <img src="assets/img/course-react.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">How to easily create a
+                                Website wth React</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 3h 55m <i
+                                    class="bi bi-bar-chart-fill"></i> Advance</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 4.5</span> <span
+                                    class="text-rating">(1,500)</span></p>
+                            <p class="card-text"><span class="text-price">$600 </span><span
+                                    class="text-rating text-decoration-line-through">$750</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-2.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">April Noms</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class=" pt-5 pb-3">Trending</h2>
+                <div class="container d-flex gap-2 ps-0 position-relative">
+                    <button class="button-carousel position-absolute top-50 start-0 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                          </svg>
+                        </button>
+                    <button class="button-carousel position-absolute top-50 start-100 translate-middle rounded-circle d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg>
+                            </button>
+                    
+                        
+                    <div class="card col-6 col-lg-3">
+                        <img src="assets/img/course-gatsby.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">Revolutionize how you build
+                                the web</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 1h 46m <i
+                                    class="bi bi-bar-chart-fill"></i> Intermediate</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star"></i><i
+                                        class="bi bi-star"></i><i class="bi bi-star"></i> 2</span> <span
+                                    class="text-rating">(16,500)</span></p>
+                            <p class="card-text"><span class="text-price">$800 </span><span
+                                    class="text-rating text-decoration-line-through">$850</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-5.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Jenny Wilson</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-6 col-lg-3">
+                        <img src="assets/img/course-html.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">HTML FUll Course - Build a
+                                Website Tutorial</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 3h 16m <i
+                                    class="bi bi-bar-chart-fill"></i> Beginner</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star"></i><i class="bi bi-star"></i> 3</span> <span
+                                    class="text-rating">(1,600)</span></p>
+                            <p class="card-text"><span class="text-price">$550 </span><span
+                                    class="text-rating text-decoration-line-through">$700</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-6.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Miston Wilson</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 d-none d-lg-block col-6">
+                        <img src="assets/img/course-node.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">Beginning Node.js, Express
+                                & MongoDB Development</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 2h 00m <i
+                                    class="bi bi-bar-chart-fill"></i> Intermediate</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star"></i> 4</span> <span
+                                    class="text-rating">(15,700)</span></p>
+                            <p class="card-text"><span class="text-price">$800 </span><span
+                                    class="text-rating text-decoration-line-through">$950</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-8.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Sina Ray</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 d-none d-lg-block col-6">
+                        <img src="assets/img/course-laravel.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3 fs-6">Laravel: The Ultimate
+                                Beginner's Guide to Lear</h5>
+                            <p class="card-text fs-6 display-6 pt-2"> <i class="bi bi-clock"></i> 1h 00m <i
+                                    class="bi bi-bar-chart-fill"></i> Beginner</p>
+                            <p class="card-text fs-6 display-6"><span><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 4.5</span> <span
+                                    class="text-rating">(2,500)</span></p>
+                            <p class="card-text"><span class="text-price">$170 </span><span
+                                    class="text-rating text-decoration-line-through">$220</span></p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="row d-flex">
+                            <div class="teacher d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="assets/img/avatar-7.jpg" width="25" alt="" class="rounded-circle">
+                                    <p class="d-inline card-text ps-2 mb-0 fw-lighter">Sobo Rikhan</p>
+                                </div>
+                                <i class="bi bi-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+     <!------------------------------------------------ FOOTER --------------------------------------------->
+    <footer>
+        <div class="row d-flex justify-content-between">
+            <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-center p-3">
+                <p class="mb-0">© 2022 Geeks. All Rights Reserved.</p>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center p-3">
+                <ul>
+                    <li><a href="javascript:void(0)">Privacy</a></li>
+                    <li><a href="javascript:void(0)">Terms</a></li>
+                    <li><a href="javascript:void(0)">Feedback</a></li>
+                    <li><a href="javascript:void(0)">Support</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

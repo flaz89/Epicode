@@ -1,0 +1,55 @@
+#carousel_section {
+    background-color: #f5f4f8;
+    padding-bottom: 6em;
+    border-bottom: 2px solid #e9ebef;
+}
+
+.card {
+
+    span {
+        color: #ffaa46;
+    }
+
+    h5 {
+        font-size: 2em;
+    }
+
+    .text-rating {
+        color: #aba6bb;
+        font-size: 0.9em;
+    }
+
+    .text-price {
+        font-size: 1.1em;
+        color: black;
+        font-weight: bold;
+    }
+
+    .bi-bar-chart-fill {
+        color: #7550fe;
+    }
+
+    .bi-star-fill,
+    .bi-star-half,
+    .bi-star {
+        color: #ffaa46;
+    }
+
+    .teacher {
+        padding: 10px 30px;
+    }
+}
+
+.button-carousel {
+    width: 35px;
+    height:35px;
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    color: rgb(219, 219, 219);;
+    box-shadow: 2px 2px 6px rgb(214, 214, 214);
+    z-index: 1;
+
+    &:hover {
+        box-shadow: 4px 4px 6px rgb(190, 190, 190);
+    }
+}

@@ -1,0 +1,13 @@
+@import "./partials/navbar";
+@import "./partials/heroSection";
+@import "./partials/promo";
+@import "./partials/carouselSection";
+@import "./partials/footer";
+
+@font-face {
+  font-family: 'feather', sans-serif;
+  src:  url("../assets/fonts/feather.ttf") format('truetype'),
+        url("../assets/fonts/fa-regular-400.woff2") format('woff2');
+    }
+    
+
