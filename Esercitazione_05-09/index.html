@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        div {
+            text-align: center;
+            margin: 1em;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="timer"></p>
+    <form action="" in>
+        <div>
+            <p id="result"></p>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="insert your name" required>
+        </div>
+        <div>
+            <label for="lastname">Lastname:</label>
+            <input id="lastname" type="text" name="lastname" placeholder="insert your lastname" required>
+        </div>
+        <div>
+            <label for="name">Phone:</label>
+            <input id="phone" type="tel" name="phone" placeholder="insert your phone number" required>
+        </div>
+
+        <div class="buttons">
+            <button id="btnSave" type="submit">Save</button>
+            <button id="btnRemove" type="submit">Remove</button>
+        </div>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
