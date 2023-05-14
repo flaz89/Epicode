@@ -183,18 +183,18 @@ nav img {
   width: 130px;
 }
 nav .nav-link {
-  color: #c8a844;
+  color: rgb(200, 168, 68);
   font-size: 30px;
 }
 nav .nav-link:hover {
-  color: #c8a844;
+  color: rgb(200, 168, 68);
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
 }
 nav .nav-link:active {
   color: none;
 }
 nav .nav-link:focus {
-  color: #c8a844;
+  color: rgb(200, 168, 68);
 }
 nav #btn-search {
   background-color: none;
@@ -202,13 +202,21 @@ nav #btn-search {
   color: #c8a844;
 }
 nav #btn-search:hover {
-  background-color: #c8a844;
+  background-color: rgb(200, 168, 68);
   color: #212529;
+}
+@media screen and (max-width: 990px) {
+  nav .navbar-toggler {
+    border-color: rgb(200, 168, 68);
+  }
+  nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(200, 168, 68)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 }
 
 footer {
   background-color: #212529;
-  border-top: 1px solid #c8a844;
+  border-top: 1px solid rgb(200, 168, 68);
 }
 footer img {
   width: 110px;
@@ -223,5 +231,5 @@ footer a {
   color: rgba(255, 255, 255, 0.374);
 }
 footer a:hover {
-  color: #c8a844;
+  color: rgb(200, 168, 68);
 }/*# sourceMappingURL=main.css.map */
