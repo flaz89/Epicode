@@ -1,0 +1,56 @@
+$font-gold: #c8a844;
+$light-black: #212529;
+
+#backHome {
+    color: $font-gold;
+    font-size: 2em;
+    position: absolute;
+    &:hover {
+        color: #c8a744ac;
+    }
+}
+
+ #registrazione-form {
+    width: 400px;
+    margin: 0 auto;
+
+    label {
+        color: $font-gold;
+        padding-bottom: 1em;
+    }
+
+    .form-control {
+        background-color: $light-black;
+        border: none;
+        color: white;
+
+        &:focus {
+            background-color: $light-black;
+            box-shadow: 0 0 0 .25rem #c8a74440;
+        }
+    }
+
+    .btn-primary {
+        background-color: $font-gold;
+        border:none;
+        color: $light-black;
+        &:hover {
+            background-color: #c8a744ac;
+            color: white;
+        }
+    }
+}
+
+.modal-content {
+    background-color: $light-black;
+    color: #c8a844;
+
+    i {
+        font-size: 200px;
+    }
+}
+
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,104 @@
+$font-gold: #c8a844;
+$light-black: #212529;
+
+body {
+    background-color: black;
+}
+
+.hero-section {
+    position: relative;
+
+    img {
+        width: 100%;
+        transform: translateY(50px);
+        
+    }
+    @media screen and (max-width:900px) {
+        img {
+            transform: translateY(0px);
+        }
+    }
+    @media screen and (max-width:748px) {
+        img {
+            display: none;
+        }
+    }
+
+    #text-container {
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        color: white;
+    }
+
+    span {
+        color: $font-gold;
+    };
+
+    #reward-logo {
+        width: 100px;
+        transform: translateY(10px);
+    }
+    @media screen and (max-width:990px) {
+        #reward-logo {
+           display: none;
+        }
+    }
+}
+
+#row {
+    transform: translateY(-70px);
+
+    img {
+        object-fit: cover;
+        aspect-ratio: 1;
+    }
+}
+
+@media screen and (max-width:748px) {
+    #row {
+        transform: translateY(100px);
+    }
+}
+
+
+.card {
+    border: 1px solid $font-gold;
+    &:hover {
+        box-shadow: 0px 0px 20px #c8a744b1;
+    }
+
+    img {
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .card-body {
+        background-color: $light-black;
+        color: white;
+        border-radius: 0px 0px 5px 5px;
+
+        .card-title {
+            color: $font-gold;
+            border-bottom: 1px solid #6c757d;
+            padding-bottom: 10px;
+        }
+
+        small {
+            color: $font-gold;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: $font-gold;
+            color: $light-black;
+        }
+    }
+}
+
+
+
+.overflow-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+

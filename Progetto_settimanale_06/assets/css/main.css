@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.hero-section {
+  position: relative;
+}
+.hero-section img {
+  width: 100%;
+  transform: translateY(50px);
+}
+@media screen and (max-width: 900px) {
+  .hero-section img {
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 748px) {
+  .hero-section img {
+    display: none;
+  }
+}
+.hero-section #text-container {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+}
+.hero-section span {
+  color: #c8a844;
+}
+.hero-section #reward-logo {
+  width: 100px;
+  transform: translateY(10px);
+}
+@media screen and (max-width: 990px) {
+  .hero-section #reward-logo {
+    display: none;
+  }
+}
+
+#row {
+  transform: translateY(-70px);
+}
+#row img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+}
+
+@media screen and (max-width: 748px) {
+  #row {
+    transform: translateY(100px);
+  }
+}
+.card {
+  border: 1px solid #c8a844;
+}
+.card:hover {
+  box-shadow: 0px 0px 20px rgba(200, 167, 68, 0.6941176471);
+}
+.card img {
+  border-radius: 5px 5px 0px 0px;
+}
+.card .card-body {
+  background-color: #212529;
+  color: white;
+  border-radius: 0px 0px 5px 5px;
+}
+.card .card-body .card-title {
+  color: #c8a844;
+  border-bottom: 1px solid #6c757d;
+  padding-bottom: 10px;
+}
+.card .card-body small {
+  color: #c8a844;
+}
+.card .card-body .btn-outline-secondary:hover {
+  background-color: #c8a844;
+  color: #212529;
+}
+
+.overflow-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#backHome {
+  color: #c8a844;
+  font-size: 2em;
+  position: absolute;
+}
+#backHome:hover {
+  color: rgba(200, 167, 68, 0.6745098039);
+}
+
+#registrazione-form {
+  width: 400px;
+  margin: 0 auto;
+}
+#registrazione-form label {
+  color: #c8a844;
+  padding-bottom: 1em;
+}
+#registrazione-form .form-control {
+  background-color: #212529;
+  border: none;
+  color: white;
+}
+#registrazione-form .form-control:focus {
+  background-color: #212529;
+  box-shadow: 0 0 0 0.25rem rgba(200, 167, 68, 0.2509803922);
+}
+#registrazione-form .btn-primary {
+  background-color: #c8a844;
+  border: none;
+  color: #212529;
+}
+#registrazione-form .btn-primary:hover {
+  background-color: rgba(200, 167, 68, 0.6745098039);
+  color: white;
+}
+
+.modal-content {
+  background-color: #212529;
+  color: #c8a844;
+}
+.modal-content i {
+  font-size: 200px;
+}
+
+.hidden {
+  display: none;
+}
+
+#detail h2 {
+  color: #c8a844;
+  font-size: 4em;
+}
+#detail img {
+  border-radius: 20px;
+  width: 70%;
+}
+#detail h3 {
+  color: #c8a844;
+}
+#detail #description {
+  color: white;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+#detail #brand {
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  color: white;
+}
+#detail #price {
+  color: #c8a844;
+}
+
+#backHome_details {
+  color: #c8a844;
+  font-size: 2em;
+}
+#backHome_details:hover {
+  color: rgba(200, 167, 68, 0.6745098039);
+}
+
+nav {
+  z-index: 2;
+  border-bottom: 1px solid #c8a844;
+}
+nav img {
+  width: 130px;
+}
+nav .nav-link {
+  color: #c8a844;
+  font-size: 30px;
+}
+nav .nav-link:hover {
+  color: #c8a844;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+}
+nav .nav-link:active {
+  color: none;
+}
+nav .nav-link:focus {
+  color: #c8a844;
+}
+nav #btn-search {
+  background-color: none;
+  border: 1px solid #c8a844;
+  color: #c8a844;
+}
+nav #btn-search:hover {
+  background-color: #c8a844;
+  color: #212529;
+}
+
+footer {
+  background-color: #212529;
+  border-top: 1px solid #c8a844;
+}
+footer img {
+  width: 110px;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.374);
+  font-style: italic;
+  font-weight: lighter;
+}
+footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.374);
+}
+footer a:hover {
+  color: #c8a844;
+}/*# sourceMappingURL=main.css.map */

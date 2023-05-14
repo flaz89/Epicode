@@ -1,0 +1,46 @@
+$font-gold: #c8a844;
+$light-black: #212529;
+
+
+#detail {
+    h2 {
+        color: $font-gold;
+        font-size: 4em;
+    }
+
+    img {
+        border-radius: 20px;
+        width: 70%;
+    }
+
+    h3 {
+        color: $font-gold;
+    }
+
+    #description {
+        color: white;
+        font-weight: lighter;
+        font-family:sans-serif;
+        font-size: 1.1em;
+    }
+
+    #brand {
+        font-family:sans-serif;
+        font-style: italic;
+        font-weight: lighter;
+        color: white;
+    }
+
+    #price {
+        color: $font-gold;
+    }
+}
+
+
+#backHome_details {
+    color: $font-gold;
+    font-size: 2em;
+    &:hover {
+        color: #c8a744ac;
+    }
+}
