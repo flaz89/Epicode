@@ -11,6 +11,7 @@ body {
 
 .hero-section {
   position: relative;
+  visibility: hidden;
 }
 .hero-section img {
   width: 100%;
@@ -47,6 +48,7 @@ body {
 
 #row {
   transform: translateY(-70px);
+  visibility: hidden;
 }
 #row img {
   -o-object-fit: cover;
@@ -90,6 +92,24 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#spinner-container {
+  z-index: 4;
+  top: 40%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+#spinner-container h3 {
+  color: #c8a844;
+}
+#spinner-container .text-warning {
+  color: #c8a844;
+}
+
+.hidden {
+  display: none;
 }
 
 #backHome {

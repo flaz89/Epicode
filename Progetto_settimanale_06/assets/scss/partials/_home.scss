@@ -5,19 +5,23 @@ body {
     background-color: black;
 }
 
+
 .hero-section {
     position: relative;
+    visibility: hidden;
 
     img {
         width: 100%;
         transform: translateY(50px);
-        
+
     }
+
     @media screen and (max-width:900px) {
         img {
             transform: translateY(0px);
         }
     }
+
     @media screen and (max-width:748px) {
         img {
             display: none;
@@ -33,21 +37,26 @@ body {
 
     span {
         color: $font-gold;
-    };
+    }
+
+    ;
 
     #reward-logo {
         width: 100px;
         transform: translateY(10px);
     }
+
     @media screen and (max-width:990px) {
         #reward-logo {
-           display: none;
+            display: none;
         }
     }
 }
 
 #row {
     transform: translateY(-70px);
+    visibility: hidden;
+    
 
     img {
         object-fit: cover;
@@ -64,6 +73,7 @@ body {
 
 .card {
     border: 1px solid $font-gold;
+
     &:hover {
         box-shadow: 0px 0px 20px #c8a744b1;
     }
@@ -94,11 +104,33 @@ body {
     }
 }
 
-
-
 .overflow-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+}
 
+
+// spinner
+
+#spinner-container {
+    z-index:4;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    
+    
+    h3 {
+        color: $font-gold;
+    }
+    
+    .text-warning {
+        color: $font-gold;
+    }
+    
+}
+
+.hidden {
+    display: none;
+}

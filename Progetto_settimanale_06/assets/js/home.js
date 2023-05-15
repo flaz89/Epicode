@@ -1,4 +1,6 @@
 const rowToPopulate = document.getElementById("row");
+const header = document.getElementById("hero-section");
+const spinner = document.getElementById("spinner-container");
 
 
 // funzione del bottone Edit sulla card per indirizzamento pagina back.html e creazione localStorage
@@ -15,6 +17,19 @@ function view(event) {
   const data = {cardId: cardId};
   localStorage.setItem("cardId", JSON.stringify(data));
   window.location.href = "details.html";
+}
+
+
+//------------------------------------------------------- SPINNER
+function hiddenSpinner() {
+  
+  rowToPopulate.classList.add("visibility", "visible");
+  header.classList.add("visibility", "visible");
+  spinner.innerHTML= "";
+}
+
+window.onload = function() {
+  setTimeout(hiddenSpinner,3000);
 }
 
 
@@ -59,3 +74,8 @@ async function showProducts() {
 
 // Chiamata alla funzione showProducts() per generare le card
 showProducts();
+
+
+
+
+
