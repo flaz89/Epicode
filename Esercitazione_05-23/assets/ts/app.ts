@@ -56,13 +56,13 @@ class BankOpWithInterest extends BankOp {
     }
 }
 
-
-
 const son = new BankOp(100, 200, 300, 400);
-son.totalBalance();
+//son.totalBalance();
+console.log(son);
 
 console.log();
 
 const mom = new BankOpWithInterest(1000, 400, 700, 800);
-mom.totalBalance();
+//mom.totalBalance();
+console.log(mom);
 
