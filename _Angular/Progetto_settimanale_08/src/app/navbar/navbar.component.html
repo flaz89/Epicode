@@ -1,0 +1,5 @@
+<nav class="d-flex bg-success text-white gap-5 py-3">
+  <a class="nav-link" routerLink="/" [class.active]="activeLink === '/'" (click)="activateLink('/')">ToDo</a>
+  <a class="nav-link" routerLink="/completati" [class.active]="activeLink === '/completati'" (click)="activateLink('/completati')">Completati</a>
+</nav>
+

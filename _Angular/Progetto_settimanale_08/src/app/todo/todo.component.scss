@@ -1,0 +1,71 @@
+.start {
+  background-color: rgb(222, 222, 222);
+  width: 200px;
+  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgb(162, 162, 162);
+
+  span {
+    color: red;
+    text-decoration: underline;
+  }
+
+  i {
+    color: red;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 2em 10%;
+
+  li {
+    list-style: none;
+
+    &:nth-child(odd) {
+      background-color: rgb(235, 235, 235);
+    }
+
+    .todo-text:hover {
+      background-color: rgb(62, 62, 62);
+      color: white;
+    }
+
+    .btnComplete {
+      border: none;
+      border-radius: 5px 0px 0px 5px;
+      padding: 0.25em 0.6em;
+      color: #198754;
+      background-color: rgb(235, 235, 235);
+      &:hover {
+        background-color: #198754;
+        color: white;
+      }
+      i {
+        font-size: 1.3em;
+      }
+    }
+
+    .btnDelete {
+      border: none;
+      border-radius: 0px 5px 5px 0px;
+      padding: 0.4em 0.6em;
+      color: red;
+      background-color: rgb(235, 235, 235);
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+}
+
+
+#actionSpinner {
+--bs-spinner-border-width: 0.15em;
+--bs-spinner-width: 1rem;
+--bs-spinner-height: 1rem;
+--bs-spinner-vertical-align: -0.2em;
+}
+
+

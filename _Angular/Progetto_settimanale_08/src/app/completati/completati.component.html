@@ -1,0 +1,32 @@
+<main>
+
+  <div *ngIf="noCompleteTodos" class="d-flex justify-content-center mt-4">
+    <p class="start m-0 text-center start">No ToDos completed yet!! <br> <span>🤷🏻‍♂️</span>
+    </p>
+  </div>
+
+  <div>
+    <ul>
+      <div *ngFor="let todo of completedTodos">
+        <li *ngIf="todo.completed" class="d-flex">
+          <div class="col-1 pe-4 text-center d-flex align-items-center justify-content-center bg-white py-2">
+            <i class="bi bi-chevron-double-right d-flex me-3"></i> {{completedTodos.indexOf(todo) + 1}}
+          </div>
+          <div class="todo-text col-6 col-md-8 py-2 px-3 d-flex align-items-center">
+            {{todo.title}}
+          </div>
+          <div class="col-4 col-md-2  d-flex align-items-center justify-content-center bg-white">
+            <button class="btnDelete" (click)="deleteToDo(todo)"><i class="bi bi-trash d-flex align-items-center justify-content-center"></i></button>
+          </div>
+          <div class="col-1 d-flex align-items-center justify-content-center bg-white">
+            <div *ngIf="todo.isLoading" >
+              <div id="actionSpinner" class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+</main>
