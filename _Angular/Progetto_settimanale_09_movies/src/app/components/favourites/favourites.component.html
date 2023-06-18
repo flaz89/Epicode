@@ -1,0 +1,26 @@
+
+<div class="container main-container">
+  <h5 class="text-white">Your Favs</h5>
+    <hr class="border-white">
+    <div *ngIf="!favMovies" class="text-center">
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  <div class="coverflow-container d-flex">
+    <ol class="coverflow-list d-flex justify-content-center">
+
+      <div *ngFor="let movie of favMoviesToShow; let i = index">
+        <input type="radio" name="cover-item" id="cover-{{i}}">
+        <li class="coverflow-item">
+          <label for="cover-{{i}}">
+            <figure class="album-cover">
+              <img src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}">
+              <figcaption class="album-name mt-1">{{movie.title}}</figcaption>
+            </figure>
+          </label>
+        </li>
+      </div>
+    </ol>
+  </div>
+</div>

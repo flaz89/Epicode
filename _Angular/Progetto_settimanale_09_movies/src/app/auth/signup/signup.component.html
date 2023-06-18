@@ -1,0 +1,23 @@
+<main class="d-flex justify-content-center">
+  <div class="background">
+    <div class="cover position-relative d-flex justify-content-center align-items-center ">
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"  style="width: 100%;" alt="">
+      <h1 class="position-absolute text-white pt-3 pt-md-5">Your <span>life</span>, is your <span>Movie!</span></h1>
+      <form [formGroup]="form" (submit)="signIn(form)" class="position-absolute text-center">
+        <div>
+          <input type="text" placeholder="username" formControlName="name" required>
+        </div>
+        <div>
+          <input  type="email" placeholder="email" formControlName="email" required>
+        </div>
+        <div>
+          <input type="password" placeholder="password" formControlName="password" required>
+        </div>
+        <button class="btn-register my-2" type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</main>
+<section class="empty"></section>
+<app-footer></app-footer>
+

@@ -1,0 +1,53 @@
+.card {
+  border: 1px solid #45484c;
+  &:hover {
+    scale: 1.03;
+  }
+
+  p.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #likeBtn {
+    background-color: transparent;
+    border: none;
+
+    .notLiked{
+      color: #636669;
+      &:hover {
+        color: #a4a4a4;
+      }
+    }
+
+    .liked {
+      color: #dc3545;
+      &:hover {
+        color: #b02432;
+      }
+    }
+  }
+}
+
+.container-accanto {
+  border-radius: 8px;
+  background-color: #45494c;
+  /* Aggiungi altri stili desiderati per il nuovo container */
+
+  .bi-cloud-check-fill, .bi-share-fill, .bi-link-45deg {
+    color: #727374;
+    &:hover{
+      color: #e40813;
+      text-shadow: 4px 4px 15px #e40813cf;
+    }
+
+  }
+}
+
+.card-expanded {
+    width: 100%;
+}
+
+
+

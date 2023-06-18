@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="container mt-3">
+    <div class="row">
+      <div *ngFor="let movie of movies; let i = index" [ngClass]="{'card-expanded': expandedIndex === i}"
+        class="p-2 d-block d-md-flex col-6 col-md-4 col-xl-3">
+
+        <div class="card" (click)="expand(i)">
+          <img src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="card-img-top" alt="{{movie.title}}">
+          <div class="card-body bg-dark d-flex justify-content-between align-items-center">
+            <p class="card-text text-white m-0">{{movie.title}}</p>
+            <button id="likeBtn" type="button" (click)="toggleLike($event, movie)">
+              <i [ngClass]="{'liked': isLiked(movie.id), 'notLiked': !isLiked(movie.id)}" class="bi bi-heart-fill d-flex align-items-center fs-4"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <div *ngIf="expandedIndex === i"
+          class="container-accanto ms-md-4 mt-3 mt-md-0 w-100 overflow-hidden d-flex flex-column justify-content-between">
+          <div class="row pt-md-4 px-3 px-md-5">
+            <div class="d-flex align-items-center justify-content-between">
+              <h4 class="text-white fs-1">{{movie.title}}</h4>
+              <div class="d-flex align-items-center gap-3 justify-content-end">
+                <a href="javascript:void(0)" title="Download"><i class="bi bi-cloud-check-fill"
+                    style="font-size: 1.7em;"></i></a>
+                <a href="javascript:void(0)" title="Share"><i class="bi bi-share-fill"
+                    style="font-size: 1.3em;"></i></a>
+                <a href={{movie.link}} target="_blank" title="Link"><i class="bi bi-link-45deg"
+                    style="font-size: 2em;"></i></a>
+              </div>
+            </div>
+            <hr class="border">
+            <p *ngIf="movie.overview === ''" class="text-white m-0 text-center">❌ SORRY NO OVERVIEW AVAILABLE ❌</p>
+            <p class="text-white">{{movie.overview}}</p>
+            <hr class="border mb-sm-0">
+            <div class="d-flex align-items-center gap-3 justify-content-end py-2">
+              <i class="bi bi-eye-fill fs-4 d-flex" style="color: #727374;"></i>
+              <p class="m-0 text-white">{{(movie.popularity / 1000).toFixed(1)}} M</p>
+            </div>
+          </div>
+          <div class="row h-100">
+            <iframe [src]="getSafeVideoUrl(movie.video)" title="YouTube video player" allowfullscreen></iframe>
+            <!-- [src]="getSafeVideoUrl(movie.video)" -->
+            <!-- https://www.youtube.com/embed/-BQPKD7eozY?autoplay=1&mute=1&controls=0&loop=1 -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

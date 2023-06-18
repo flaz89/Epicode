@@ -1,0 +1,12 @@
+<form #form="ngForm" (ngSubmit)="enter(form)">
+  <div>
+    <input type="email" name="email" id="email" placeholder="email" required ngModel>
+  </div>
+  <div>
+    <input type="password" name="password" id="password" placeholder="password" required ngModel>
+  </div>
+  <button class="btn-signin my-2" type="submit">Log In</button>
+</form>
+
+
+

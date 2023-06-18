@@ -1,0 +1,39 @@
+nav {
+  a {
+  color: white;
+  &:hover{
+    color: rgba(255, 255, 255, 0.4);
+  }
+ }
+ a.active{
+  color: red;
+  font-weight: 900;
+  &:hover{
+    color: red;
+    font-weight: 900;
+  }
+ }
+  .navbar-brand img {
+      height: 50px;
+  }
+
+  i {
+    font-size: 1.5em;
+  }
+
+  .dropdown-menu {
+    transform: translateX(-100px);
+    --bs-dropdown-link-hover-bg: none;
+
+    li {
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+}
+
+
+
+

@@ -1,0 +1,79 @@
+.background {
+  background-image: url("https://images.frandroid.com/wp-content/uploads/2022/10/netflix-octobre-contenus-2022.jpg");
+  background-size: cover;
+  max-height: 100vh;
+  max-width: 1200px;
+  width: 100%;
+
+  .cover {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.061), rgba(0, 0, 0, 0.301));
+    }
+  }
+
+  h1 {
+    top:0;
+    font-weight: 900;
+    span {
+      color:#e40813;
+    }
+  }
+
+  form {
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 20px;
+  border-radius: 20px;
+  }
+
+    input {
+      margin: 0.5em 0;
+      height: 40px;
+      width: 200px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.842);
+      border: none;
+      color: white;
+      box-shadow: 0 0 10px #e40813;
+      &:focus{
+        border-color: red;
+        border:1px solid #e40813;
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    .btn-register {
+      height: 2em;
+      color: white;
+      width: 5em;
+      font-weight: bold;
+      background-color: #e40813;
+      border: 0;
+      border-radius: 6px;
+      &:hover {
+        background-color: rgb(198, 0, 0);
+        border: 0;
+      }
+     }
+
+     @media screen and (max-width: 680px) {
+      form {
+        background-color: transparent;
+      }
+    };
+
+    @media screen and (max-width: 480px) {
+      form {
+        transform: translateY(19em);
+        width: 100%;
+
+        input {
+          width: 80%
+        }
+      }
+      .empty {
+        height: 18em;
+
+      }
+    };
+
