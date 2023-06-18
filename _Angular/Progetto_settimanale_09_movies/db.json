@@ -23,6 +23,24 @@
       "password": "$2a$10$t4q7YwB3rD6IH/ZOj2Liu.4EXg159Eelx4XzGajrNWC.tWcd0XdyC",
       "name": "sig",
       "id": 4
+    },
+    {
+      "email": "andre@andre.com",
+      "password": "$2a$10$KOGmziuB2DhXT4avo33eRe.CwwjCfI0UJX5KsgN0SiBp4CX/YK84u",
+      "name": "andre",
+      "id": 5
+    },
+    {
+      "email": "AFq@12.com",
+      "password": "$2a$10$miPS9LrkuQZnkYLd1HaaKuRqA3f.68.1AqaDB9oIW2gyoiwbNgCnq",
+      "name": "dsD",
+      "id": 6
+    },
+    {
+      "email": "aaa@bbb.it",
+      "password": "$2a$10$1pol285HJZh7FN5dESZrH.HmqRk7YONRHTM8PukBgm3I8RUslIJRG",
+      "name": "aaa",
+      "id": 7
     }
   ],
   "favorites": [
@@ -50,6 +68,21 @@
       "movieId": 791373,
       "userId": 1,
       "id": 13
+    },
+    {
+      "movieId": 460465,
+      "userId": 5,
+      "id": 14
+    },
+    {
+      "movieId": 567189,
+      "userId": 5,
+      "id": 15
+    },
+    {
+      "movieId": 578701,
+      "userId": 5,
+      "id": 16
     }
   ],
   "genres": [

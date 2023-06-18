@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 import { Friends } from 'src/app/model/friends.interface';
+import { AuthData } from 'src/app/model/auth-data.interface';
 
 @Component({
   selector: 'app-friends',
@@ -10,6 +11,7 @@ import { Friends } from 'src/app/model/friends.interface';
 export class FriendsComponent implements OnInit {
 
   friends!:Friends[];
+  user!:AuthData;
 
 
 
@@ -26,11 +28,18 @@ export class FriendsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const userData = localStorage.getItem("user");
+
+    if (userData !== null) {
+      this.user = JSON.parse(userData);
+      console.log(this.user);
+    }
+
     setTimeout(()=>{
       console.log("ciao");
       this.userSrv.getUser().subscribe((response:any) => {
       console.log(response);
-      this.friends = response
+      this.friends = response.filter((friend:Friends) => friend.id !== this.user.user.id);
     });
     }, 1000)
   }
