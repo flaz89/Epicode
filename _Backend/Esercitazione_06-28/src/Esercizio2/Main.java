@@ -13,6 +13,7 @@ public class Main {
 		
 		NumChar test = new NumChar(num);
 		test.check();
+		input.close();
 	}
 
 }
