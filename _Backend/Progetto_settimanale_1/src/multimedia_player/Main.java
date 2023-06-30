@@ -125,40 +125,80 @@ public class Main {
             if (inputPlayer >= 1 && inputPlayer <= 5) {
                 Multimedia media = datas[inputPlayer - 1];
                 
+                // ------------------- MEDIA
                 if (media instanceof Image) {
                     ((Image) media).show();
                     
                     System.out.println("Vuoi alzare o abbassare la luminosità? y/n");
                     
                     String changeLuminosity = input.nextLine();
-                    if (changeLuminosity == "y") {
-                    	((Image) media).highLuminosity();
-                    } else if (changeLuminosity == "y") {
-                    	((Image) media).lowLuminosity();
-                    } else {
+                    
+                    if (changeLuminosity.equals("y")) {
+                    	System.out.println("Alza la luminosità con '+' o abbassala con '-':");
+                    	String turnUp = input.nextLine();
+                    	if (turnUp.equals("+")) {
+                    		((Image) media).highLuminosity();
+                    	} else if (turnUp.equals("-")) {
+                    		((Image) media).lowLuminosity();
+                    	} else {
                     	System.out.println("Seleziona l'input corretto");
-                    }
+                    	} 
+                   }
                     
-                    
+                 // ------------------- AUDIO
                 } else if (media instanceof Audio) {
                     ((Audio) media).play();
+                    
+                    System.out.println("Vuoi alzare il alzare o abbassare il volume? y/n");
+                    
+                    String changeVolume = input.nextLine();
+                    
+                    if (changeVolume.equals("y")) {
+                    	System.out.println("Alza il volume con '+' o abbassala con '-':");
+                    	String turnUp = input.nextLine();
+                    	if (turnUp.equals("+")) {
+                    		((Audio) media).highLuminosity();
+                    	} else if (turnUp.equals("-")) {
+                    		((Audio) media).lowLuminosity();
+                    	} else {
+                    	System.out.println("Seleziona l'input corretto");
+                    	}
+                    }
+                    	
+                 // ------------------- VIDEO
                 } else if (media instanceof Video) {
                 	((Video) media).play();
+                	
+                	System.out.println("Vuoi alzare/abbassare la luminosità (l) o vuoi alzare o abbassare il volume (v)?");
+                    
+                    String changeVolumeLuminosity = input.nextLine();
+                    
+                    if (changeVolumeLuminosity.equals("l")) {
+                    	System.out.println("Alza la luminosità con '+' o abbassala con '-':");
+                    	String turnUp = input.nextLine();
+                    	if (turnUp.equals("+")) {
+                    		((Video) media).highLuminosity();
+                    	} else if (turnUp.equals("-")) {
+                    		((Video) media).lowLuminosity();
+                    	} else {
+                    	System.out.println("Seleziona l'input corretto");
+                    	}
+                    } else if (changeVolumeLuminosity.equals("v")) {
+                    	System.out.println("Alza il volume con '+' o abbassa con '-':");
+                    	String turnUp = input.nextLine();
+                    	if (turnUp.equals("+")) {
+                    		((Video) media).highVolume();
+                    	} else if (turnUp.equals("-")) {
+                    		((Video) media).lowVolume();
+                    	} else {
+                    	System.out.println("Seleziona l'input corretto");
+                    	}
+                    }
                 }
             }
         } while (inputPlayer != 0);
 
         input.close();
-//		
-		
-//		Video ciao = new Video("ciao", 10, 10, 5);
-//		ciao.play();
-//		
-//		Image blu = new Image("blu", 7);
-//		blu.show();
-//		
-//		Audio song = new Audio("song", 5, 3 );
-//		song.play();
 
 	}
 
