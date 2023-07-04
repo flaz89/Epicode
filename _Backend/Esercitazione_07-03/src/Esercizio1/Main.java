@@ -23,7 +23,7 @@ public class Main {
 		printArr(numArr);
 		
 		
-		// loop del
+		// loop del programma
 		while (true) {
 			try {
 				System.out.print("Scegli un numero che va da 1 a 10: ");
@@ -46,7 +46,7 @@ public class Main {
 							System.out.println("Inserisci un numero corretto");
 						}
 					} catch (Exception e) {
-						System.out.println("Errore: " + e.getMessage());
+						System.out.println("Inserisci un valore valido! " + e.getMessage());
 						continue;
 					}
 					
@@ -54,7 +54,7 @@ public class Main {
 					System.out.println("il numero non è corretto");
 				}
 			} catch (Exception e) {
-				System.out.println("Inserisci un valore valido!");
+				System.out.println("Inserisci un valore valido! " + e.getMessage());
 				input.nextLine();
 			}
 			
