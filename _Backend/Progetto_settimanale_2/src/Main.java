@@ -64,10 +64,8 @@ public class Main {
 	
 	// STAMPO TUTTO L'ARRAY ------------------------------------------
 	public static <E> void printAchive(ArrayList<E> arr) {
-		for (E item : arr) {
-			
+		for (E item : arr) {			
 			System.out.println(item);
-			
 		}
 	}
 	
@@ -103,7 +101,7 @@ public class Main {
 	        
 	    } else {
 	    	
-	        System.out.println("Nessun elemento trovato con il codice ISBN " + isbn);
+	        System.err.println("Nessun elemento trovato con il codice ISBN " + isbn);
 	        
 	    }
 	}
@@ -111,34 +109,29 @@ public class Main {
 	// RICERCA OGGETTO per ANNO ---------------------------
 	
 	public static void searchByDate(ArrayList<BookMagBlueprint> arr, int date) {
-		Optional<BookMagBlueprint> prodDate = arr.stream().filter(item -> item.getDate() == date).findFirst();
-		
-		System.out.println(prodDate);
-		
-//		if (prodDate.isPresent()) {
-//			
-//	        BookMagBlueprint item = prodDate.get();
-//	        System.out.println("Elemento trovato:\n" + item);
-//	        
-//	    } else {
-//	    	
-//	        System.out.println("Nessun titolo trovato con questa data di pubblicazione: " + date);
-//	        
-//	    }
+	    Optional<BookMagBlueprint> prodDate = arr.stream().filter(item -> item.getDate() == date).findFirst();
+
+	    if (prodDate.isPresent()) {
+	        BookMagBlueprint item = prodDate.get();
+	        System.out.println("Elemento trovato:\n" + item);
+	    } else {
+	        System.err.println("Nessun titolo trovato con questa data di pubblicazione: " + date);
+	    }
 	}
-	
+
 	// RICERCA OGGETTO per AUTORE ---------------------------
 	
 	public static void searchByAuthor(ArrayList<BookMagBlueprint> arr, String author) {
 		Optional<BookMagBlueprint> prodAuthor = arr.stream().filter(item -> item instanceof Book).filter(item -> String.valueOf(((Book) item).getAuthor()).equals(author)).findFirst();
 		
 		if (prodAuthor.isPresent()) {
+			
 	        BookMagBlueprint item = prodAuthor.get();
-	        // L'elemento con il codice ISBN corrispondente è stato trovato
 	        System.out.println("Elemento trovato:\n" + item);
+	        
 	    } else {
-	        // L'elemento con il codice ISBN corrispondente non è stato trovato
-	        System.out.println("Nessun titolo di " + author +  " è stato trovato");
+
+	        System.err.println("Nessun titolo di " + author +  " è stato trovato");
 	    }
 	}
 

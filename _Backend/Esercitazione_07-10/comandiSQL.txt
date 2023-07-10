@@ -1,0 +1,23 @@
+1) SELECT nome, cognome
+	FROM "Clienti" WHERE DATE_PART('year', data_nascita) > 1982;
+
+2) SELECT COUNT(*)
+	FROM public."Fatture" WHERE iva > 20;
+
+3) SELECT EXTRACT(YEAR FROM data_fattura) AS anno, COUNT(*) AS numero_fatture, SUM(importo) AS somma_importi
+	FROM public."Fatture" GROUP BY anno;
+
+4) SELECT *
+	FROM public."Prodotti" WHERE DATE_PART('year', data_attivazione) = 2017
+  	AND (in_produzione = TRUE OR in_commercio = TRUE);
+
+5) SELECT EXTRACT(YEAR FROM data_fattura) AS anno, COUNT(*) AS numero_fatture
+	FROM public."Fatture" WHERE iva = 20 GROUP BY anno;
+
+6) SELECT EXTRACT(YEAR FROM data_fattura) AS anno, COUNT(*) AS numero_fatture
+	FROM public."Fatture" WHERE tipologia = 'A' GROUP BY anno HAVING COUNT(*) > 2;
+
+7) SELECT public."Fatture".*, public."Fornitori".denominazione
+	FROM public."Fatture" INNER JOIN public."Fornitori" ON public."Fatture".numero_fornitore = public."Fornitori".numero_fornitore;
+
+8) 
