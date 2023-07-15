@@ -24,7 +24,6 @@ public class Main {
 		
 		ed.save(kff);
 		
-		
 	}
 
 }
