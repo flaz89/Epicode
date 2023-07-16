@@ -2,6 +2,7 @@ package entities;
 
 import java.time.LocalDate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -20,13 +21,11 @@ public class User {
 	private String surname;
 	private LocalDate birth;
 	@Id
-	private int codeCard;
+	@Column(name = "cardnumber")
+	private long codeCard;
 	
-//	public User(String _name, String _surname, LocalDate _birth, int _codeCard) {
-//		this.name = _name;
-//		this.surname = _surname;
-//		this.birth = _birth;
-//		this.codeCard = _codeCard;
-//	}
-	
+	@Override
+	public String toString() {
+		return  "User -> [codeCard] = " + codeCard + ", [name] = " + name + ", [surname] = " + surname + ", [birth] = " + birth;
+	}
 }

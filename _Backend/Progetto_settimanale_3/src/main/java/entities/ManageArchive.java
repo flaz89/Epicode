@@ -112,5 +112,39 @@ public class ManageArchive {
 	    } finally {
 	        em.close();
 	    }
+	    
 	}
+	
+	//AGGIUNGO UN UTENTE AL DATABASE ---------------------------------------- //
+		public void addUser(User user) {
+			EntityManager em = emf.createEntityManager();
+			try {
+				em.getTransaction().begin();
+				em.persist(user);
+				em.getTransaction().commit();
+				System.out.println("Utente aggiunto correttamente");
+			} catch(Exception e) {
+				e.printStackTrace();
+			} finally {
+				em.close();
+			}
+		}
+		
+	//AGGIUNGO UN PRESTITO AL DATABASE ---------------------------------------- // 
+		//errore in fase di aggiornamento database, mi aggiunge la copia dell'oggetto BoojMag che gli passo nel costruttore, che l'utente
+			public void addLoan(Loan loan) {
+				EntityManager em = emf.createEntityManager();
+				try {
+					em.getTransaction().begin();
+					em.persist(loan);
+					em.getTransaction().commit();
+					System.out.println("Prestito aggiunto correttamente");
+				} catch(Exception e) {
+					System.out.println("C'è stato un errore in fase di caricamento");
+					e.printStackTrace();
+				} finally {
+					em.close();
+				}
+			}
+
 }
