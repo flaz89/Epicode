@@ -39,14 +39,14 @@ public class Runner implements CommandLineRunner{
 //		User user1 = new User("Giovanni", "Liari", "giova.liari@gmail.it");
 //		User user2 = new User("Flavio", "Mammo", "fla.mammo@gmail.it");
 //		User user3 = new User("Marco", "Pinsi", "marco.pinsi@gmail.it");
-//		User user4 = new User("Lorenzo", "Terzi", "lorenzo.trz@gmail.it");
+		User user4 = new User("Lorenzo", "Terzi", "lorenzo.trz@gmail.it");
 //		
 //		userDAO.saveUser(user1);
 //		userDAO.saveUser(user2);
 //		userDAO.saveUser(user3);
 //		userDAO.saveUser(user4);
 //		
-//		Building google = new Building("Google Center", "1600 Amphitheatre Parkway", "Mountain View");
+		Building google = new Building("Google Center", "1600 Amphitheatre Parkway", "Mountain View");
 //		Building marriott = new Building("Marriott Marquis NY", "1535 Broadway", "New York");
 //		Building sanpaolo = new Building("Grattacielo Intesa Sanpaolo", "C.so Inghilterra 3", "Torino");
 //		Building broletto = new Building("Broletto", "Via Broletto 46", "Milano");
@@ -57,7 +57,7 @@ public class Runner implements CommandLineRunner{
 //		buildingDAO.saveBuilding(broletto);
 //		
 //		
-//		Space spaceGoogle = new Space("Spazio innovativo", 5, google, SpaceType.OPEN_SPACE);
+		Space spaceGoogle = new Space("Spazio innovativo", 5, google, SpaceType.OPEN_SPACE);
 //		Space spaceMarriot = new Space("Spazio lussuoso", 30, marriott, SpaceType.MEETING_ROOM);
 //		Space spaceSanpaolo = new Space("Uffici formali", 15, sanpaolo, SpaceType.MEETING_ROOM);
 //		Space spaceBroletto = new Space("Cooworking funzionale", 5, broletto, SpaceType.PRIVATE);
@@ -79,6 +79,8 @@ public class Runner implements CommandLineRunner{
 		
 		
 		spaceDAO.findSpacesByTypeAndCity(SpaceType.OPEN_SPACE, "Mountain View");
+		
+		bookingDAO.makeBooking(user4, LocalDate.of(2024, 1, 1), spaceGoogle);
 		
 	}
 

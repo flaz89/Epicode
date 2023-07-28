@@ -10,5 +10,5 @@ public interface I_bookingDAO {
 	
 	public void saveBooking(Booking booking);
 	
-	public void createBooking(User userId, LocalDate bookingDate, Space id);
+	public void makeBooking(User userId, LocalDate bookingDate, Space id);
 }

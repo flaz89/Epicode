@@ -1,6 +1,7 @@
 package flavioSpringBootData.DAO;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,16 +30,17 @@ public class BookingService implements I_bookingDAO {
 	}
 
 	@Override
-	public void createBooking(User user, LocalDate bookingDate, Space space) {
+	public void makeBooking(User user, LocalDate bookingDate, Space space) {
 		if (spaceService.isSpaceOccupied(space)) {
             System.out.println("Impossibile effettuare la prenotazione. La postazione è già occupata.");
             return;
-            
-            Booking booking = new Booking(LocalDate _bookingDate, User _user, Space _space);
         }
+		spaceService.saveSpace(space);
+		space.setOccupied(true);
 		
+		Booking booking = new Booking(bookingDate, user, space);
+		bookingRepo.save(booking);
+		System.out.println("Prenotazione creata con successo: " + booking.toString());
 	}
 	
-	
-
 }
